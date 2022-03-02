@@ -7,19 +7,12 @@ trigger:
 - main
 
 pool:
-  vmImage: ubuntu-latest
+  vmImage: windows-latest
 
 steps:
-- script: echo Hello, world!
-  displayName: 'Run a one-line script'
-
-- script: |
-    echo Add other tasks to build, test, and deploy your project.
-    echo See https://aka.ms/yaml
-  displayName: 'Run a multi-line script'
 - task: CopyFiles@2
   inputs:
-    SourceFolder: 'https://github.com/rleme/ApiNet5_infra'
+    SourceFolder: 'https://github.com/rleme/ApiNet5_infra/'
     Contents: '**'
     TargetFolder: '$(Build.ArtifactStagingDirectory)'
 - task: AzureResourceManagerTemplateDeployment@3
