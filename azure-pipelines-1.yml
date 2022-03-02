@@ -19,7 +19,7 @@ steps:
   displayName: 'Run a multi-line script'
 - task: CopyFiles@2
   inputs:
-    SourceFolder: 'rleme/ApiNet5_infra'
+    SourceFolder: 'https://github.com/rleme/ApiNet5_infra'
     Contents: '**'
     TargetFolder: '$(Build.ArtifactStagingDirectory)'
 - task: AzureResourceManagerTemplateDeployment@3
