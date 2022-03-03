@@ -1,28 +1,24 @@
-# Starter pipeline
-# Start with a minimal pipeline that you can customize to build and deploy your code.
-# Add steps that build, run tests, deploy, and more:
-# https://aka.ms/yaml
-
 trigger:
-- main
+- none
 
 pool:
-  vmImage: ubuntu-latest
+  vmImage: 'ubuntu-latest'
 
 steps:
 - task: CopyFiles@2
   inputs:
-    SourceFolder: 'ApiNet5_infra/App_srvc'
+    SourceFolder: 'ApiNet5_infra/App_srvc/'
     Contents: '**'
     TargetFolder: '$(Build.ArtifactStagingDirectory)'
+
 - task: AzureResourceManagerTemplateDeployment@3
   inputs:
     deploymentScope: 'Resource Group'
     azureResourceManagerConnection: 'api07'
     subscriptionId: '92e9f98f-0c03-4ad0-987c-f90448eebae7'
     action: 'Create Or Update Resource Group'
-    resourceGroupName: 'api05_rg'
-    location: 'West US 2'
+    resourceGroupName: 'teste1980-rg'
+    location: 'Brazil South'
     templateLocation: 'Linked artifact'
     csmFile: '$(Build.ArtifactStagingDirectory)/deploymentTemplate.json'
     csmParametersFile: '$(Build.ArtifactStagingDirectory)/deploymentParameters.json'
