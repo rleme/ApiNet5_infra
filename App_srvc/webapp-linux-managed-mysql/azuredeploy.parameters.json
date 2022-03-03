@@ -1,15 +1,48 @@
 {
-  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
-  "contentVersion": "1.0.0.0",
-  "parameters": {
-    "siteName": {
-      "value": "GEN-UNIQUE"
-    },
-    "administratorLogin": {
-      "value": "GEN-UNIQUE-16"
-    },
-    "administratorLoginPassword": {
-      "value": "GEN-PASSWORD"
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "subscriptionId": {
+            "value": "92e9f98f-0c03-4ad0-987c-f90448eebae7"
+        },
+        "name": {
+            "value": "api1979"
+        },
+        "location": {
+            "value": "West US 2"
+        },
+        "hostingPlanName": {
+            "value": "api1979-sp"
+        },
+        "serverFarmResourceGroup": {
+            "value": "api05_rg"
+        },
+        "alwaysOn": {
+            "value": false
+        },
+        "sku": {
+            "value": "Free"
+        },
+        "skuCode": {
+            "value": "F1"
+        },
+        "workerSize": {
+            "value": "0"
+        },
+        "workerSizeId": {
+            "value": "0"
+        },
+        "numberOfWorkers": {
+            "value": "1"
+        },
+        "currentStack": {
+            "value": "dotnet"
+        },
+        "phpVersion": {
+            "value": "OFF"
+        },
+        "netFrameworkVersion": {
+            "value": "v5.0"
+        }
     }
-  }
 }
