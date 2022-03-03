@@ -20,6 +20,6 @@ steps:
     resourceGroupName: 'teste1980-rg'
     location: 'Brazil South'
     templateLocation: 'Linked artifact'
-    csmFile: '$(Build.ArtifactStagingDirectory)/deploymentTemplate.json'
-    csmParametersFile: '$(Build.ArtifactStagingDirectory)/deploymentParameters.json'
+    csmFile: '$(Build.ArtifactStagingDirectory)/azuredeploy.json'
+    csmParametersFile: '$(Build.ArtifactStagingDirectory)/azuredeploy.parameters.json'
     deploymentMode: 'Incremental'
