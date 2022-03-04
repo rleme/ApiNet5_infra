@@ -118,13 +118,13 @@
             "location": "westus2",
             "tags": {},
             "dependsOn": [],
-            "properties": {
-                "ApplicationId": "[parameters('name')]",
-                "Request_Source": "IbizaWebAppExtensionCreate",
-                "Flow_Type": "Redfield",
-                "Application_Type": "web",
-                "WorkspaceResourceId": "/subscriptions/92e9f98f-0c03-4ad0-987c-f90448eebae7/resourcegroups/defaultresourcegroup-usw3/providers/microsoft.operationalinsights/workspaces/defaultworkspace-92e9f98f-0c03-4ad0-987c-f90448eebae7-usw3"
-            }
+          "properties": {
+            "ApplicationId": "[parameters('name')]",
+            "Request_Source": "IbizaWebAppExtensionCreate",
+            "Flow_Type": "Redfield",
+            "Application_Type": "web",
+            "WorkspaceResourceId": "4446ddaa-9736-484e-acb2-ab8705047852"
+          }
         }
     ]
 }
