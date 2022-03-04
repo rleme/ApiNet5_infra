@@ -123,7 +123,7 @@
           "Request_Source": "IbizaWebAppExtensionCreate",
           "Flow_Type": "Redfield",
           "Application_Type": "web",
-          "WorkspaceResourceId": "/subscriptions/92e9f98f-0c03-4ad0-987c-f90448eebae7/resourcegroups/defaultresourcegroup-usw2/providers/Microsoft.OperationalInsights/workspaces/4446ddaa-9736-484e-acb2-ab8705047852"
+          "WorkspaceResourceId": "/subscriptions/92e9f98f-0c03-4ad0-987c-f90448eebae7/resourceGroups/api05_rg/providers/Microsoft.OperationalInsights/workspaces/ApiNet5"
         }
       }
     ]
