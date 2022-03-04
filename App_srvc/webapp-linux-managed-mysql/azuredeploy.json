@@ -111,20 +111,20 @@
                 "Name": "[parameters('skuCode')]"
             }
         },
-        {
-            "apiVersion": "2020-02-02-preview",
-            "name": "ApiNet5",
-            "type": "microsoft.insights/components",
-            "location": "westus2",
-            "tags": {},
-            "dependsOn": [],
-          "properties": {
-            "ApplicationId": "[parameters('name')]",
-            "Request_Source": "IbizaWebAppExtensionCreate",
-            "Flow_Type": "Redfield",
-            "Application_Type": "web",
-            "WorkspaceResourceId": "/subscriptions/92e9f98f-0c03-4ad0-987c-f90448eebae7/resourcegroups/defaultresourcegroup-usw2/providers/Microsoft.OperationalInsights/workspaces/4446ddaa-9736-484e-acb2-ab8705047852"
-          }
+      {
+        "apiVersion": "2020-02-02-preview",
+        "name": "ApiNet5",
+        "type": "microsoft.insights/components",
+        "location": "West US 2",
+        "tags": {},
+        "dependsOn": [],
+        "properties": {
+          "ApplicationId": "[parameters('name')]",
+          "Request_Source": "IbizaWebAppExtensionCreate",
+          "Flow_Type": "Redfield",
+          "Application_Type": "web",
+          "WorkspaceResourceId": "/subscriptions/92e9f98f-0c03-4ad0-987c-f90448eebae7/resourcegroups/defaultresourcegroup-usw2/providers/Microsoft.OperationalInsights/workspaces/4446ddaa-9736-484e-acb2-ab8705047852"
         }
+      }
     ]
 }
