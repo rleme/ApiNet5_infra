@@ -53,7 +53,7 @@
             "location": "[parameters('location')]",
             "tags": {},
             "dependsOn": [
-                "microsoft.insights/components/api1979",
+                "microsoft.insights/components/ApiNet5",
                 "[concat('Microsoft.Web/serverfarms/', parameters('hostingPlanName'))]"
             ],
             "properties": {
@@ -62,11 +62,11 @@
                     "appSettings": [
                         {
                             "name": "APPINSIGHTS_INSTRUMENTATIONKEY",
-                            "value": "[reference('microsoft.insights/components/api1979', '2015-05-01').InstrumentationKey]"
+                            "value": "[reference('microsoft.insights/components/ApiNet5', '2015-05-01').InstrumentationKey]"
                         },
                         {
                             "name": "APPLICATIONINSIGHTS_CONNECTION_STRING",
-                            "value": "[reference('microsoft.insights/components/api1979', '2015-05-01').ConnectionString]"
+                            "value": "[reference('microsoft.insights/components/ApiNet5', '2015-05-01').ConnectionString]"
                         },
                         {
                             "name": "ApplicationInsightsAgent_EXTENSION_VERSION",
